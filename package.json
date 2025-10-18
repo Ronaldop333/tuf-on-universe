@@ -15,6 +15,9 @@
     "@react-three/fiber": "^8.15.11",
     "@react-three/drei": "^9.85.20",
     "three": "^0.161.0"
+    "@next/swc-darwin-x64": "14.0.0",
+    "@next/swc-linux-x64-gnu": "14.0.0", 
+    "@next/swc-win32-x64-msvc": "14.0.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.0",
