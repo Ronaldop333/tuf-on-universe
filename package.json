@@ -13,7 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@react-three/fiber": "^8.15.11",
-    "@react-three/drei": "^9.88.13",
+    "@react-three/drei": "^9.85.20",
     "three": "^0.161.0"
   },
   "devDependencies": {
