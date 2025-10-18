@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-inter">
+      <body className="font-inter relative">
         {children}
       </body>
     </html>
