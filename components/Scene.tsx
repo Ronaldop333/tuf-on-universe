@@ -10,7 +10,7 @@ export function Scene() {
         gl={{ alpha: true, antialias: false }}
         dpr={[1, 2]} // Adaptive pixel ratio
       >
-       <color attach="background" args={['#0f0f23']} />
+       <color attach="background" args={['#0a0a0a']} />
         <UniverseBackground />
       </Canvas>
     </div>
