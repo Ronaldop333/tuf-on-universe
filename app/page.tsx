@@ -1,4 +1,3 @@
-// app/page.tsx - INTERNATIONAL VERSION
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-950">
