@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'tuf-navy': '#0f172a',
-        'tuf-blue': '#1e40af', 
+        'tuf-blue': '#1e40af',
         'tuf-cyan': '#06b6d4',
         'tuf-electric': '#3b82f6',
       },
