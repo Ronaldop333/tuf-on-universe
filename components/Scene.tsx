@@ -1,4 +1,5 @@
 'use client'
+
 import { Canvas } from '@react-three/fiber'
 import { UniverseBackground } from './UniverseBackground'
 
@@ -8,11 +9,15 @@ export function Scene() {
       <Canvas
         camera={{ position: [0, 0, 1] }}
         gl={{ alpha: true, antialias: false }}
-        dpr={[1, 2]} // Adaptive pixel ratio
+        dpr={[1, 2]} // Suporte adaptativo a displays retina
+        shadows={false}
       >
-       <color attach="background" args={['#0a0a0a']} />
+        {/* Cor de fundo padrão (pode ser controlada por tema depois) */}
+        <color attach="background" args={['#0a0a0a']} />
+        
+        {/* Componente de fundo procedural ou animado */}
         <UniverseBackground />
       </Canvas>
     </div>
   )
-} 
+}
