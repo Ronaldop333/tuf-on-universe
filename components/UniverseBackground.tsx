@@ -1,10 +1,19 @@
 'use client'
-import { useRef, useMemo } from 'react'
+
+import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
+import { Mesh } from 'three'
 
 export function UniverseBackground(props: any) {
-  const ref = useRef<any>()
-  
+  const ref = useRef<Mesh>(null)
+
+  // Animação de rotação contínua
+  useFrame((_state, delta) => {
+    if (ref.current) {
+      ref.current.rotation.y += delta * 0.05
+    }
+  })
+
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <mesh ref={ref}>
