@@ -2,24 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-:root {
-  --tuf-navy: #0a0a0a;
-  --tuf-blue: #1e40af;
-  --tuf-cyan: #06b6d4;
-  --tuf-electric: #3b82f6;
-}
+  :root {
+    --tuf-navy: #0a0a0a;
+    --tuf-blue: #1e40af;
+    --tuf-cyan: #06b6d4;
+    --tuf-electric: #3b82f6;
+    --font‑inter: 'Inter', sans‑serif;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box‑sizing: border‑box;
+  }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #0a0a0a;
-  color: white;
-  min-height: 100vh;
+  html {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--font‑inter);
+    background-color: var(--tuf-navy);
+    color: white;
+    min-height: 100vh;
+    line-height: 1.5;
+    –‑webkit‑font‑smoothing: antialiased;
+    –‑moz‑osx‑font‑smoothing: grayscale;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  button, input, textarea, select {
+    font: inherit;
+  }
 }
