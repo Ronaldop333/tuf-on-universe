@@ -34,10 +34,11 @@ export function UniverseBackground(props: any) {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
-          color="#4F46E5"
-          size={0.003}
+          color="#1e40af"
+          size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
+          opacity={0.8}
         />
       </Points>
     </group>
