@@ -14,7 +14,7 @@ module.exports = {
         'tuf-electric': '#3b82f6',
       },
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
