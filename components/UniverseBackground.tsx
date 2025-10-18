@@ -8,9 +8,10 @@ export function UniverseBackground(props: any) {
   const ref = useRef<any>()
   const count = 8000
 
-  const sphere = useMemo(() => 
-    random.inSphere(new Float32Array(count * 3), { radius: 1.5 })
-  , [count])
+  const sphere = useMemo(() => {
+    const positions = random.inSphere(new Float32Array(count * 3), { radius: 1.5 })
+    return positions as Float32Array
+  }, [count])
 
   useFrame((state, delta) => {
     if (ref.current) {
