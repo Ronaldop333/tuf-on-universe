@@ -28,7 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="font-inter bg-tuf-navy text-white relative min-h-screen antialiased">
+      <body
+        className="font-inter text-white relative min-h-screen antialiased bg-no-repeat bg-cover bg-center"
+        style={{ backgroundImage: "url('/space-bg.jpg')" }}
+      >
         {children}
       </body>
     </html>
