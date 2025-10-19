@@ -22,4 +22,4 @@ export function UniverseBackground(props: any) {
       </mesh>
     </group>
   )
-}
+} 
